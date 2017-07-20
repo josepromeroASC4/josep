@@ -1,47 +1,40 @@
 function setup(){
     createCanvas(800,600);
-    background(150);
+    background(42,92,38);
 
-    fill("LightCoral");
+  fill("LightCoral");
     rect(50,25,150,50);
 
-    fill("CornflowerBlue");
+  fill("CornflowerBlue");
     rect(600,400,150,50);
-
-    fill("black");
-    textSize(20);
-    text(String(charizard.name), 55, 24);
-    text(String(charizard.HP), 55, 50);
-    text(String(pikachu.name), 605, 395);
-    text(String(pikachu.HP), 605, 425);
-
-textSize(20);
-
+    
+   textSize(20);
     //button 1
     fill("Yellow");
     rect(20,530,150,50);
     fill("Black");
     text("Flamethrower", 32,545,150,50);
 
-    //button 2
+ //button 2
     fill("Yellow");
     rect(200,530,150,50);
     fill("Black");
     text("Fly", 270,545,150,50);
 
-    //button 3
+ //button 3
     fill("Yellow");
     rect(370,530,150,50);
     fill("Black");
     text("Slash", 410,545,150,50);
 
-    //button 4
+ //button 4
     fill("Yellow");
     rect(530,530,150,50);
     fill("Black");
     text("Ember", 570,545,150,50);
 
 }
+
 function Pokemon(name, hp, moves){
     this.name=name;
     this.hp=hp;
@@ -83,65 +76,82 @@ pikachu.moves.push(pikamovelist);
 console.log(p1);
 console.log(comp);
 
-comp[0].hp= comp[0].hp - p1[0].moves[0][1].dmg;
+// comp[0].hp= comp[0].hp - p1[0].moves[0][1].dmg;
 console.log(p1[0].name, "used", p1[0].moves[0][1].name, "on", comp[0].name);
 console.log(comp[0]);
 
+function draw(){
+
+  text(String(charizard.name), 600, 400);
+    text(String(charizard.hp), 600, 425);
+    text(String(pikachu.name), 50, 25);
+    text(String(pikachu.hp), 50, 50);
+
+    if(p1[0].hp <=0 || comp[0].hp <=0){
+        alert("You have lost the battle!");
+    }
+
+
+}
+
+
+var check = false;
+
 function keyPressed(){
     
-   var cm = Math.round(Math.random() * 2);
+  var cm = Math.round(Math.random() * 2);
 
-   check = true;
+  check = true;
     if (check == true){
-        p1[0].HP = p1[0].HP - comp[0].moves[0][cm+1].dmg;
+        p1[0].hp = p1[0].hp - comp[0].moves[0][cm+1].dmg;
     }
-    
 
-   b = key;
-    comp[0].HP = comp[0].HP - p1[0].moves[0][b-1].dmg;
+  b = key;
+    comp[0].hp = comp[0].hp - p1[0].moves[0][b-1].dmg;
     clear()
 
-   createCanvas(800, 600);
-    background(150);
+createCanvas(800,600);
+    background(42,92,38);
 
-  fill("LightCoral");
+ fill("LightCoral");
     rect(50,25,150,50);
 
-  fill("CornflowerBlue");
+ fill("CornflowerBlue");
     rect(600,400,150,50);
 
-    //button 1
-   textSize(20);
+  textSize(20);
+    
+  //button 1
     fill("Yellow");
     rect(20,530,150,50);
     fill("Black");
     text("Flamethrower", 32,545,150,50);
 
-    //button 2
+ //button 2
     fill("Yellow");
     rect(200,530,150,50);
     fill("Black");
     text("Fly", 270,545,150,50);
 
-    //button 3
+ //button 3
     fill("Yellow");
     rect(370,530,150,50);
     fill("Black");
     text("Slash", 410,545,150,50);
 
-    //button 4
+ //button 4
     fill("Yellow");
     rect(530,530,150,50);
     fill("Black");
     text("Ember", 570,545,150,50);
 
-   text(String(charizard.name), 55, 24);
-    text(String(charizard.HP), 55, 50);
-    text(String(pikachu.name), 605, 395);
-    text(String(pikachu.HP), 605, 425);
-  
-  
-    
 
-   return false
+  text(String(charizard.name), 600, 400);
+    text(String(charizard.hp), 600, 425);
+    text(String(pikachu.name), 50, 25);
+    text(String(pikachu.hp), 50, 50);
+
+ 
+
+  return false
 }
