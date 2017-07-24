@@ -1,0 +1,16 @@
+body{
+    background-image: url("assets/views.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+
+}
+
+.singleDrake{
+
+border: solid 5px blue;
+
+
+
+}
+
