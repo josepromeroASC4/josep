@@ -13,34 +13,12 @@ function setup(){
 }
 
 
-// var playgrid = [ 
-//         [true, true, true, true, true, true, true, true, true, true, true], 
-//         [true, true, true, true, true, true, true, true, true, true, true], 
-//         [true, true, true, true, true, true, true, true, true, true, true], 
-//         [true, true, true, true, true, true, true, true, true, true, true], 
-//         [true, true, true, true, true, true, true, true, true, true, true], 
-//         [true, true, true, true, true, true, true, true, true, true, true], 
-//         [true, true, true, true, true, true, true, true, true, true, true], 
-//         [true, true, true, true, true, true, true, true, true, true, true],
-
-
-//  ];
 var row = prompt("How many rows would you like? ");
 var column = prompt("How many columns would you like? ");
 
 var playgrid = [];
 
 var rowd = []
-
-// for (plug = 0; plug < row; plug++){   
-//     for (jam = 0; jam < column; jam++){
-//         rowd.push(true);
-//     }
-
-//     playgrid.push(rowd);
-
-//     rowd = [];
-// }
 
 for (jam = 0; jam < column; jam++){    //these 'for' loops would make a boolean matrix (?) named playgrid like above;
      rowd.push(true);
@@ -59,13 +37,32 @@ var xCoord = 400; //Protagonist
 
 function draw(){
 
+
    createCanvas(600,450);
     background("White");
     rect(xCoord,400,40,15);
     
     
+       if (keyIsDown(LEFT_ARROW)) {
+            if (xCoord > 0) {
+                xCoord -= 5;
+            }
+        }
+
+     if (keyIsDown(RIGHT_ARROW)) {
+            if (xCoord + 50 < width) {
+                xCoord += 5;
+            }
+        }
+        fill("red");
+        rect(90, 350, 40, 15);
+        rect(180, 350, 40, 15);
+        rect(270,350,40,15);
+        rect(360, 350, 40, 15);
+
+
     
-    
+
 
    var phtml = []; //this will make the squares
     for (ro = 0; ro < playgrid.length; ro ++){                
@@ -110,17 +107,3 @@ function draw(){
 //a checking array to compare the x,y positions of the enemies and the moving bullet
 //a break when a certain point is reached
 //should link enemies to boolean table even further so that if it's false it won't draw the enemy instead of making it black
-
-function keyPressed(){
-       if (keyIsDown(LEFT_ARROW)) {
-            if (xCoord > 0) {
-                xCoord -= 5;
-            }
-        }
-
-     if (keyIsDown(RIGHT_ARROW)) {
-            if (xCoord + 50 < width) {
-                xCoord += 5;
-            }
-        }
-}
