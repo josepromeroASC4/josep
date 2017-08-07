@@ -10,4 +10,7 @@ function BasketballPlayer(name, team, height, position, number, netWorth, isGood
 
 }
 
-var shaq = new BasketballPlayer("Shaquille O'neal", "Celtics", "7'1\"", "Center", 36, 100000000000, true, ["Magic", "Lakers", "Heat", "Suns", "Cavs"])
+var shaq = new BasketballPlayer("Shaquille O'neal", "Celtics", "7'1\"", "Center", 36, 100000000000, true, ["Magic", "Lakers", "Heat", "Suns", "Cavs"]);
+var kobe = new BasketballPlayer("Kobe Bryant", "Lakers", "6'8\"", "Small Forward", 24, 1000000000, true, ["none"])
+console.log(shaq);
+console.log(kobe);

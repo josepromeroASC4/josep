@@ -1,5 +1,5 @@
 var playerChoice = "p";
-var cpuChoice = "p";
+var cpuChoice = "s";
 
 if (playerChoice == "r" && cpuChoice == "p") {
     console.log ("CPU won because it chose paper");

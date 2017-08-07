@@ -1,0 +1,14 @@
+body{
+    background-image: url("http://i.imgur.com/pRnucMs.jpg");
+    background-size: cover;
+    text-align: center;
+}
+
+.textContainer{
+
+    border: solid 2px white;
+
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
