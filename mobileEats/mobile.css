@@ -1,0 +1,9 @@
+#map{
+    height: 500px;
+}
+
+.masthead{
+    background-image: url("img/burger.png");
+    background-size: cover;
+    background-position: center;
+}
