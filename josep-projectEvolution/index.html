@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!--Reference platform.js library here-->
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+    <!--Reference Client ID in meta tag here-->
+    <!-- 1068136826943-17k9mmql1bfvf1u21f0imqmathp0p45t.apps.googleusercontent.com -->
+
+<meta name="google-signin-client_id" content="1068136826943-17k9mmql1bfvf1u21f0imqmathp0p45t.apps.googleusercontent.com">
+    <!--jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!--custom files-->
+    <script src="google.js"></script>
+    <link rel="stylesheet" href="evolve.css">
+
+    <title>Lionel Messi - A Timeline (v2.0)</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/round-about.css" rel="stylesheet">
+
+    <link href= "evolve.css" rel= "stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+   <div class="signs">
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        <a href="#" class="signOut" onclick="onSignOut();">Sign out</a>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Lionel Messi - A Timeline (v2.0)</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Introduction Row -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="leo">About Lionel Messi </h1>
+                <p class = "leodesc">Lionel Messi is one of the best players the game of soccer has ever seen. He plays for FC Barcelona and for the Argentinian National Team. He wears the number 10 and plays the position of forward. </p>
+            </div>
+        </div>
+
+        <!-- Team Members Row -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">Timeline</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4 josep">
+                <img class="img-circle img-responsive img-center" src="http://i.imgur.com/bMXKeBp.png" alt="">
+                <h3 class="dos"> Birth
+                    <small class = "text"></small>
+                </h3>
+                <p class = "text">Lionel Messi was born in Rosario, Argentina on June 24th, 1987. He was born to working class parents and has two brothers and one sister.</p>
+            </div>
+            <div class="col-sm-4 josep">
+                <img class="img-circle img-responsive img-center" src="messi2.png" alt="">
+                <h3 class="masia">La Masia
+                    <small></small>
+                </h3>
+                <p class = "uno">At the age of 13, Messi was offered a place at FC Barcelona's youth academy, La Masia. He moved to Barcelona at the age of 13.</p>
+            </div>
+            <div class="col-sm-4 josep">
+                <img class="img-circle img-responsive img-center" src="MessiDebut.png" alt="">
+                <h3 class ="debut">Professional Debut
+                    <small></small>
+                </h3>
+                <p class = "debut2">Messi made his professional debut for FC Barcelona on October 16th, 2004.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4 josep">
+                <img class="img-circle img-responsive img-center" src="balon.png" alt="">
+                <h3 class = "si" >Balon D'or
+                    <small></small>
+                </h3>
+                <p class = "win" >Messi won his first Balon D'or trophy in 2009.</p>
+            </div>
+            <div class="col-sm-4 josep">
+                <img class="img-circle img-responsive img-center" src="messiCL.png" alt="">
+                <h3 class = "champ">Champions League 2015
+                    <small></small>
+                </h3>
+                <p class = "champ2" >Messi won the Champions League with FC Barcelona in 2015</p>
+            </div>
+            <div class="col-sm-4 josep">
+                <img class="img-circle img-responsive img-center" src="messijersey.png" alt="">
+                <h3 class = "rekt">500th goal
+                    <small></small>
+                </h3>
+                <p class = "rektmadrid">Messi scored his 500th goal agaisnt Real Madrid on April 23rd, 2017.</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; SportTech Industries 2017</p>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

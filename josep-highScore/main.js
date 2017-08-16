@@ -1,4 +1,8 @@
+//set database object
 var database = firebase.database().ref();
+
+//button executes this function
+
 
 // function setchoice(choice)
 // {
